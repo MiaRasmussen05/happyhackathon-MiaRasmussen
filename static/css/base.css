@@ -26,8 +26,24 @@
     text-align: center;
 }
 
+.carousel-item img {
+    max-height: 230px;
+    max-width: 230px;
+}
+
 .content-container {
     margin-top: 120px; 
+}
+
+/* CSS for Contributor Names footer */
+.contributor-name {
+    text-align: center;
+}
+
+/* CSS for Carousel Control Arrows */
+.carousel-control-prev,
+.carousel-control-next {
+    color: #FFB6C1;
 }
 
 .footer {
