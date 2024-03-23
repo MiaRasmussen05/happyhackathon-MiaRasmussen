@@ -9,7 +9,7 @@ def register_view(request):
         user_obj = form.save()
         return redirect('/login/')
     context = {"form": form}
-    return render(request, "accounts/register.html", context)
+    return render(request, "accounts/register.html", context) 
 
 def login_view(request):
     if request.method == "POST":
@@ -17,14 +17,14 @@ def login_view(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect('/')
+            return redirect('/') 
     else:
         form = AuthenticationForm(request)
     context = {
         "form": form
     }
     return render(request, "accounts/login.html", context)
-
+ 
 
 def logout_view(request):
     if request.method == "POST":
