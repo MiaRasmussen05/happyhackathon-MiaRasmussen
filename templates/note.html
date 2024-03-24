@@ -22,7 +22,7 @@
             </form>
             <form action="{% url 'get_random_affirmation' %}" method="post">
                 {% csrf_token %}
-                <input type="hidden" name="category" value="Pick-Me-Up">
+                <input type="hidden" name="category" value="Pick-me-up">
                 <button type="submit" class="btn btn-outline-primary col-12 mb-3">Pick Me Up</button>
             </form>
             <form action="{% url 'get_random_affirmation' %}" method="post">
